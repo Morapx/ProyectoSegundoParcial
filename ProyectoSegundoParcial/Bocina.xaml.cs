@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ProyectoSegundoParcial
 {
     /// <summary>
-    /// Lógica de interacción para Bose.xaml
+    /// Lógica de interacción para Bocina.xaml
     /// </summary>
-    public partial class Bose : UserControl
+    public partial class Bocina : UserControl
     {
-        public Bose()
+        public Bocina()
         {
             InitializeComponent();
         }
