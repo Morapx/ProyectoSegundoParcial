@@ -8,15 +8,15 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid x:Name="grindsecundarios" >
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Codigo del producto:" VerticalAlignment="Top" RenderTransformOrigin="-0.956,-7.427" Height="38" Width="109" FontSize="14"/>
-        <TextBox x:Name="boxcodigo" HorizontalAlignment="Left" Height="40" Margin="119,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="boxcodigo" HorizontalAlignment="Left" Height="40" Margin="119,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" TextChanged="boxcodigo_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top" Height="30" Width="109" FontSize="14"/>
-        <TextBox x:Name="boxdescripcion" HorizontalAlignment="Left" Height="30" Margin="119,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" SelectionOpacity="4"/>
+        <TextBox x:Name="boxdescripcion" HorizontalAlignment="Left" Height="30" Margin="119,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" SelectionOpacity="4" TextChanged="boxdescripcion_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,147,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top" Height="47" Width="109" FontSize="14"/>
-        <TextBox x:Name="boxprecio" HorizontalAlignment="Left" Height="32" Margin="124,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" Text="0"/>
+        <TextBox x:Name="boxprecio" HorizontalAlignment="Left" Height="32" Margin="124,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" TextChanged="boxprecio_TextChanged" />
         <TextBlock HorizontalAlignment="Left" Margin="0,219,0,0" TextWrapping="Wrap" Text="Provedor:" VerticalAlignment="Top" Height="45" Width="119" FontSize="14"/>
-        <TextBox x:Name="boxprovedor" HorizontalAlignment="Left" Height="29" Margin="124,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="boxprovedor" HorizontalAlignment="Left" Height="29" Margin="124,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" TextChanged="boxprovedor_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,274,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Height="41" Width="109"/>
-        <TextBox x:Name="boxtipo" HorizontalAlignment="Left" Height="28" Margin="124,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="boxtipo" HorizontalAlignment="Left" Height="28" Margin="124,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="boxtipo_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="326,24,0,0" TextWrapping="Wrap" Text="Color:" VerticalAlignment="Top"/>
         <RadioButton x:Name="radiorojo" Content="Rojo" HorizontalAlignment="Left" Margin="381,12,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="radionegro" Content="Negro" HorizontalAlignment="Left" Margin="452,12,0,0" VerticalAlignment="Top"/>
@@ -27,15 +27,15 @@
         <CheckBox x:Name="checkaluminio" Content="Aluminio" HorizontalAlignment="Left" Margin="381,194,0,0" VerticalAlignment="Top" FontSize="14"/>
         <CheckBox x:Name="checkplaticometal" Content="Plasticometal" HorizontalAlignment="Left" Margin="493,168,0,0" VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="308,274,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Height="41" Width="109"/>
-        <ComboBox x:Name="Combomarca" HorizontalAlignment="Left" Margin="407,274,0,0" VerticalAlignment="Top" Width="186">
+        <ComboBox x:Name="Combosecundario" HorizontalAlignment="Left" Margin="407,274,0,0" VerticalAlignment="Top" Width="186" SelectionChanged="Combosecundario_SelectionChanged">
             <ComboBoxItem>BOSE</ComboBoxItem>
             <ComboBoxItem>Panasonic</ComboBoxItem>
             <ComboBoxItem>V-Moda</ComboBoxItem>
             <ComboBoxItem>Kotion</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="boroncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="576,21,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="botonguardar" Content="Guardar" HorizontalAlignment="Left" Margin="698,21,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBlock x:Name="textoadvertencia" HorizontalAlignment="Left" Margin="510,378,0,0" TextWrapping="Wrap" Text="Es necesario llenar todos los datos" VerticalAlignment="Top" Height="62" Width="263" FontSize="20" FontWeight="Bold" Foreground="Red"/>
+        <Button x:Name="boroncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="576,21,0,0" VerticalAlignment="Top" Width="75" Click="boroncancelar_Click"/>
+        <Button x:Name="botonguardar" Content="Guardar" HorizontalAlignment="Left" Margin="698,21,0,0" VerticalAlignment="Top" Width="75" Click="botonguardar_Click"/>
+        <TextBlock x:Name="textoadvertencia" HorizontalAlignment="Left" Margin="407,301,0,0" TextWrapping="Wrap" Text="Es necesario llenar todos los datos" VerticalAlignment="Top" Height="62" Width="263" FontSize="20" FontWeight="Bold" Foreground="Red"/>
 
     </Grid>
 </UserControl>

@@ -45,6 +45,10 @@ namespace ProyectoSegundoParcial
         {
             textoadvertencia.Visibility = Visibility.Hidden;
         }
+        private void Combosecundario_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
 
         private void boxcodigo_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -56,6 +60,15 @@ namespace ProyectoSegundoParcial
             grindsecundarios.Children.Clear();
         }
 
+        private void botonguardar_Click(object sender, RoutedEventArgs e)
+        {
+            if ( boxtipo.Text == string.Empty||boxprovedor.Text == string.Empty||boxprecio.Text == string.Empty
+                ||boxdescripcion.Text == string.Empty||boxcodigo.Text == string.Empty )
+            {
+                textoadvertencia.Visibility = Visibility.Visible;
+            }
+        }
 
+       
     }
 }

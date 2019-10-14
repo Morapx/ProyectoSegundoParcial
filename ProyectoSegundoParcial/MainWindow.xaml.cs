@@ -24,5 +24,35 @@ namespace ProyectoSegundoParcial
         {
             InitializeComponent();
         }
+
+        private void botonagregar_Click(object sender, RoutedEventArgs e)
+        {
+            switch (combotipoproducto.SelectedIndex)
+            {
+                case 0:
+                    grindprincipal.Children.Add(new Bocina());
+                    break;
+                case 1:
+                    grindprincipal.Children.Add(new Audiculares());
+                    break;
+                case 2:
+                    grindprincipal.Children.Add(new Audifonos());
+                    break;
+                case 3:
+                    grindprincipal.Children.Add(new Bajos());
+                    break;
+                case 4:
+                    grindprincipal.Children.Add(new Amplificadores());
+                    break;
+                case 5:
+                    grindprincipal.Children.Add(new Microfonos());
+                    break;
+            }
+        }
+
+        private void combotipoproducto_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            grindprincipal.Children.Clear();
+        }
     }
 }

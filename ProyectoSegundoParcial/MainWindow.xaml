@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="25,43,0,0" TextWrapping="Wrap" Text="Tipo de producto" VerticalAlignment="Top" Height="24" Width="102"/>
-        <ComboBox x:Name="combotipoproducto" HorizontalAlignment="Left" Margin="132,43,0,0" VerticalAlignment="Top" Width="373">
+        <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="Tipo de producto" VerticalAlignment="Top" Height="24" Width="102"/>
+        <ComboBox x:Name="combotipoproducto" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Width="373" SelectionChanged="combotipoproducto_SelectionChanged">
             <ComboBoxItem>Bocina</ComboBoxItem>
             <ComboBoxItem>Audiculares</ComboBoxItem>
             <ComboBoxItem>Audifonos</ComboBoxItem>
@@ -16,9 +16,9 @@
             <ComboBoxItem>Amplificadores</ComboBoxItem>
             <ComboBoxItem>Microfonos</ComboBoxItem>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="266,10,0,0" TextWrapping="Wrap" Text="Tienda Musical" VerticalAlignment="Top" Width="150"/>
-        <Button x:Name="botonagregar" Content="Agregar" HorizontalAlignment="Left" Margin="542,41,0,0" VerticalAlignment="Top" Width="105"/>
-        <Grid x:Name="grindprincipal" HorizontalAlignment="Left" Height="267" Margin="25,90,0,0" VerticalAlignment="Top" Width="703"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,-3,0,0" TextWrapping="Wrap" Text="Tienda Musical" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="botonagregar" Content="Agregar" HorizontalAlignment="Left" Margin="513,13,0,0" VerticalAlignment="Top" Width="105" Click="botonagregar_Click"/>
+        <Grid x:Name="grindprincipal" HorizontalAlignment="Left" Height="368" Margin="10,42,0,0" VerticalAlignment="Top" Width="774"/>
 
     </Grid>
 </Window>

@@ -27,14 +27,14 @@
         <CheckBox x:Name="checkaluminio" Content="Aluminio" HorizontalAlignment="Left" Margin="381,194,0,0" VerticalAlignment="Top" FontSize="14"/>
         <CheckBox x:Name="checkplaticometal" Content="Plasticometal" HorizontalAlignment="Left" Margin="493,168,0,0" VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="308,274,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Height="41" Width="109"/>
-        <ComboBox x:Name="Combomarca" HorizontalAlignment="Left" Margin="407,274,0,0" VerticalAlignment="Top" Width="186">
+        <ComboBox x:Name="Combosecundario" HorizontalAlignment="Left" Margin="407,274,0,0" VerticalAlignment="Top" Width="186" SelectionChanged="Combosecundario_SelectionChanged">
             <ComboBoxItem>BOSE</ComboBoxItem>
             <ComboBoxItem>Panasonic</ComboBoxItem>
             <ComboBoxItem>V-Moda</ComboBoxItem>
             <ComboBoxItem>Kotion</ComboBoxItem>
         </ComboBox>
         <Button x:Name="boroncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="576,21,0,0" VerticalAlignment="Top" Width="75" Click="boroncancelar_Click"/>
-        <Button x:Name="botonguardar" Content="Guardar" HorizontalAlignment="Left" Margin="698,21,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBlock x:Name="textoadvertencia" HorizontalAlignment="Left" Margin="510,378,0,0" TextWrapping="Wrap" Text="Es necesario llenar todos los datos" VerticalAlignment="Top" Height="62" Width="263" FontSize="20" FontWeight="Bold" Foreground="Red"/>
+        <Button x:Name="botonguardar" Content="Guardar" HorizontalAlignment="Left" Margin="698,21,0,0" VerticalAlignment="Top" Width="75" Click="botonguardar_Click"/>
+        <TextBlock x:Name="textoadvertencia" HorizontalAlignment="Left" Margin="407,296,0,0" TextWrapping="Wrap" Text="Es necesario llenar todos los datos" VerticalAlignment="Top" Height="62" Width="263" FontSize="20" FontWeight="Bold" Foreground="Red"/>
     </Grid>
 </UserControl>
