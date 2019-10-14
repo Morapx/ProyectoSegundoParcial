@@ -69,8 +69,8 @@ namespace ProyectoSegundoParcial
 
         private void botonguardar_Click(object sender, RoutedEventArgs e)
         {
-            if ( boxtipo.Text == string.Empty||boxprovedor.Text == string.Empty||boxprecio.Text == string.Empty
-               ||boxdescripcion.Text == string.Empty||boxcodigo.Text == string.Empty )
+            if ( boxtipo.Text == string.Empty&&boxprovedor.Text == string.Empty&&boxprecio.Text == string.Empty
+               &&boxdescripcion.Text == string.Empty&&boxcodigo.Text == string.Empty )
             {
                 textoadvertencia.Visibility =
                     Visibility.Visible;
