@@ -7,16 +7,27 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Codigo del producto" VerticalAlignment="Top" RenderTransformOrigin="-0.956,-7.427" Height="38" Width="109" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="119,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="Descripcion" VerticalAlignment="Top" Height="30" Width="109" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="119,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" SelectionOpacity="4"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,147,0,0" TextWrapping="Wrap" Text="Precio" VerticalAlignment="Top" Height="47" Width="109" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="124,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,219,0,0" TextWrapping="Wrap" Text="Provedor" VerticalAlignment="Top" Height="45" Width="119" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="124,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,274,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="41" Width="109"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="124,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Codigo del producto:" VerticalAlignment="Top" RenderTransformOrigin="-0.956,-7.427" Height="38" Width="109" FontSize="14"/>
+        <TextBox x:Name="Bocinaboxcodigo" HorizontalAlignment="Left" Height="40" Margin="119,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top" Height="30" Width="109" FontSize="14"/>
+        <TextBox x:Name="Bocinaboxdescripcion" HorizontalAlignment="Left" Height="30" Margin="119,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" SelectionOpacity="4"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,147,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top" Height="47" Width="109" FontSize="14"/>
+        <TextBox x:Name="Bocinaboxprecio" HorizontalAlignment="Left" Height="32" Margin="124,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" Text="0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,219,0,0" TextWrapping="Wrap" Text="Provedor:" VerticalAlignment="Top" Height="45" Width="119" FontSize="14"/>
+        <TextBox x:Name="Bocinaboxprovedor" HorizontalAlignment="Left" Height="29" Margin="124,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,274,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Height="41" Width="109"/>
+        <TextBox x:Name="Bocinaboxtipo" HorizontalAlignment="Left" Height="28" Margin="124,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="326,24,0,0" TextWrapping="Wrap" Text="Color:" VerticalAlignment="Top"/>
+        <RadioButton x:Name="Bocinaradiorojo" Content="Rojo" HorizontalAlignment="Left" Margin="381,12,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="Bocinaradionegro" Content="Negro" HorizontalAlignment="Left" Margin="452,12,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="Bocinaradioazul" Content="Azul" HorizontalAlignment="Left" Margin="381,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="Bocinaradioblanco" Content="Blanco" HorizontalAlignment="Left" Margin="452,49,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Bocinacheckmetal" Content="Metal" HorizontalAlignment="Left" Margin="381,147,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="308,166,0,0" TextWrapping="Wrap" Text="Material:" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Bocinacheckaluminio" Content="Aluminio" HorizontalAlignment="Left" Margin="381,194,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <CheckBox x:Name="Bocinacheckplasticometal" Content="Plasticometal" HorizontalAlignment="Left" Margin="493,168,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="308,274,0,0" TextWrapping="Wrap" Text="Especificacion:" VerticalAlignment="Top" Height="41" Width="109"/>
+        <TextBox x:Name="Bocinaboxespecificacion" HorizontalAlignment="Left" Height="28" Margin="422,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </UserControl>

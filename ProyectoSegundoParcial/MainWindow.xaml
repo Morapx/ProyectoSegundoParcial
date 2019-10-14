@@ -14,7 +14,7 @@
             <ComboBoxItem>Audifonos</ComboBoxItem>
             <ComboBoxItem>Bajos</ComboBoxItem>
             <ComboBoxItem>Amplificadores</ComboBoxItem>
-            <ComboBoxItem>Fundas</ComboBoxItem>
+            <ComboBoxItem>Microfonos</ComboBoxItem>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="266,10,0,0" TextWrapping="Wrap" Text="Tienda Audifonos" VerticalAlignment="Top" Width="150"/>
         <Button Content="Agregar" HorizontalAlignment="Left" Margin="542,41,0,0" VerticalAlignment="Top" Width="105"/>
