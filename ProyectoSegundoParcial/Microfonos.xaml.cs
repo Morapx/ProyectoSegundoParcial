@@ -23,6 +23,39 @@ namespace ProyectoSegundoParcial
         public Microfonos()
         {
             InitializeComponent();
+            textoadvertencia.Visibility = Visibility.Hidden;
         }
+
+        private void boxtipo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textoadvertencia.Visibility = Visibility.Hidden;
+        }
+
+        private void boxprovedor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textoadvertencia.Visibility = Visibility.Hidden;
+        }
+
+        private void boxprecio_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textoadvertencia.Visibility = Visibility.Hidden;
+        }
+
+        private void boxdescripcion_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textoadvertencia.Visibility = Visibility.Hidden;
+        }
+
+        private void boxcodigo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textoadvertencia.Visibility = Visibility.Hidden;
+        }
+
+        private void boroncancelar_Click(object sender, RoutedEventArgs e)
+        {
+            grindsecundarios.Children.Clear();
+        }
+
+
     }
 }
